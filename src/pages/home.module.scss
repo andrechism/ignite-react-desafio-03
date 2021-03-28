@@ -1,1 +1,60 @@
-// TODO
+.postContainer {
+
+}
+
+.postWrapper {
+  display: block;
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    color: var(--gray-500);
+    margin-top: 0.5rem;
+  }
+
+  div {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    display: flex;
+    margin-top: 1.625rem;
+
+    time {
+      margin-right: 1.875rem;
+    }
+
+    time, address {
+      text-transform: capitalize;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.625rem;
+      }
+    }
+  }
+
+  & + a {
+    margin-top: 3.125rem;
+  }
+}
+
+.paginationButton {
+  color: var(--pink-500);
+  background: transparent;
+  border: 0;
+  margin-top: 4.125rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
